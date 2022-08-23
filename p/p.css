@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    background-color:#2596be;
+    margin: auto;
+}
+
+main{
+    background-color:#fdfcfc;
+    border-radius: 19px;
+    margin: 11%;
+    padding: 5%;
+
+    min-width: auto;
+    max-width: auto;
+}
+/*fazer com que o torne um quadrado em vez de retangulo */
+
+.inf {
+    font-size: 2rem;
+    width: 80%;
+}
+
+.btn {
+    font-size: 2rem;
+    border-radius: 1cm;
+}
+
+.out{
+    font-size: 5ch;
+}
