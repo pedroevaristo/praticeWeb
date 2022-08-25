@@ -12,21 +12,11 @@ body {
     font-family: 'Itim', cursive;
     min-width: auto;
     max-width: auto;
-
-    display: flex;
     /*Quebrar a linha dealguma forma quando dimuniur a tela do navegador */
-    flex-wrap: wrap;
 
 }
 
-@media (max-width: 800px) and (max-height: 700px) {
 
-    /*1° base x altura */
-    body {
-        display: flex;
-        justify-content: space-around;
-    }
-}
 
 /*@media colocar uma resolução em que ele pode em modo janela 
 /* classes */
@@ -45,6 +35,16 @@ body {
     gap: 2cm;
 }
 
+@media (max-width: 800px) and (max-height: 700px) {
+
+    /*1° base x altura */
+    body, .box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+}
 .break {
     gap: 1rem;
 }
@@ -64,9 +64,8 @@ body {
 
 
 
-footer {
-    display: flex;
-    justify-content: end;
-    /*width: 20%;*/
+footer {    
+    height: 10%;
+    width: 20%;
     background-color: bisque;
 }
