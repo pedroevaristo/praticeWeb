@@ -10,12 +10,15 @@ align-content;
 body {
     background-color: #2d5b6b;
     font-family: 'Itim', cursive;
-
     min-width: auto;
     max-width: auto;
 
-   
+    display: flex;
+    /*Quebrar a linha dealguma forma quando dimuniur a tela do navegador */
+    flex-wrap: wrap;
+
 }
+
 @media (max-width: 800px) and (max-height: 700px) {
 
     /*1° base x altura */
@@ -24,14 +27,26 @@ body {
         justify-content: space-around;
     }
 }
+
 /*@media colocar uma resolução em que ele pode em modo janela 
 /* classes */
 .box {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 15px 20px;
-    margin: 5cm;
-    padding: 2cm;
+    margin: 3cm;
+    padding: 1cm;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 2cm;
+}
+
+.break {
+    gap: 1rem;
 }
 
 
@@ -43,25 +58,15 @@ body {
 }
 
 
-
-
-div{
-    display:flex; /*Quebrar a linha dealguma forma quando dimuniur a tela do navegador */
-    flex-wrap: wrap;
-    justify-content: center;
-    margin:auto;
-    background-color: blueviolet;
-     
-}
-div > .show{
-    flex: 1 1 200px;/* Obs, na ordem: */
+.show {
+   gap: 1rem;
 }
 
-footer{
+
+
+footer {
     display: flex;
-    flex-wrap: wrap;
-    margin: auto;
+    justify-content: end;
+    /*width: 20%;*/
     background-color: bisque;
-    width:20%;
-    
 }
