@@ -9,17 +9,18 @@ Elementbutton.addEventListener("click", function () {
     
     if (Elementinput.value >= 5 && Elementinput.value <= 11) {
         
+        Elementoutput.innerHTML = "Infantil"
         console.log("Infantil");
     
-    } else if (Elementinput.value >= 12 && Elementinput.value <= 17) {
+    } if (Elementinput.value >= 12 && Elementinput.value <= 17) {
     
         console.log("Juvenil");
     
-    } /*else {
+    } else {
     
         console.log("Adultos");
     
-    }*/
+    }
 }
 
 })
