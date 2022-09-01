@@ -11,32 +11,37 @@ body {
     background-color: #84C454;
     display: flex;
     justify-content: center;
+    padding-right:12%;
+    padding-top: 10%;    
     
 }
 
 @media (max-width: 800px) and (max-height: 700px) {
     body {
+        padding-top: 30%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
 }
 .table{
+    border: none;
     background-color: #9CE4BC;
     width: 10cm;
     height: 3cm;
     border-radius: 10px;
 
-    padding: 0% 0% 0% 0%;/*colocar as coisas centralizadas*/
-    
+    padding: 5% 3% 0% 15%;/*colocar as coisas centralizadas*/
+    margin:2% 2% 2% 2%;
 }
 .num {
     width: 10%;
 }
 
-button {
+.buttonSend {
     /*colocar um hover aqui sobre o botao*/
     background-color: white;
-    border-radius: 15%;
+    border: none;
+    border-radius: 5px;
     
 }
