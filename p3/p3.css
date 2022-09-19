@@ -32,7 +32,7 @@ body {
     border-radius: 10px;
 
     padding: 5% 3% 0% 15%;/*colocar as coisas centralizadas*/
-    margin:2% 2% 2% 2%;
+    margin:2% 2% 2% 2%;/* mudar a margin*/
 
     transform: translateX(0px);
     transition: 1.0s all;
@@ -40,7 +40,7 @@ body {
 }
 
 .table:hover{
-    box-shadow: 20px;
+    box-shadow: 20px 10px;
     transform: translateX(20px);
 }
 .num {
