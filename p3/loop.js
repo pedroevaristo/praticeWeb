@@ -6,14 +6,16 @@ var buttn = document.getElementById('buttn');
 buttn.addEventListener("click", function () {
     var list = document.createElement("ul");
     var inf = parseInt(document.getElementById('inf').value);
-    for (var i = 0; i < inf; i++) {
-        var listnumb = document.createElement("li");
-        result.appendChild(listnumb);
-        listnumb.appendChild(list);
-        list.innerHTML = i;
-        
 
-       
+    var listnum = document.createElement("ol");
+    
+    for (var i = 0; i < inf; i++) {
+        var list = document.createElement("li");
+
+        listnum.appendChild(list);
+
+        result.appendChild(listnum);
+ 
     }
 
 
