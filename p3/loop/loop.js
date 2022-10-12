@@ -1,4 +1,3 @@
-var vetor = [];
 var result = document.getElementById('result');
 var buttn = document.getElementById('buttn');
 
@@ -11,11 +10,11 @@ buttn.addEventListener("click", function () {
     
     for (var i = 0; i < inf; i++) {
         var list = document.createElement("li");
-
+        list.innerHTML = i + " = " + i ;
         listnum.appendChild(list);
 
         result.appendChild(listnum);
- 
+        console.log(i)
     }
 
 
