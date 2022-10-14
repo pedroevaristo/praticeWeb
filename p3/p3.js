@@ -3,15 +3,19 @@ var inNumber2 = document.getElementById('numNote2');
 var inNumber3 = document.getElementById('numNote3');
 
 
+
 buttonSend.addEventListener("click", function () {
    var quantStudent = parseInt(document.getElementById('numStudent').value);
    var list = document.createElement("ol");
    const rep = 0;
-   do {
 
-   } while (rep);
-   for (var i = 0; i < quantStudent; i++) {
+   do {
       result = Number(inNumber1.value) + Number(inNumber2.value) + Number(inNumber3.value);
+      console.log(result / 3);
+      rep += 1;
+   } while (rep <quantStudent);
+/*
+   for (var i = 0; i < quantStudent; i++) {
 
       var numbList = document.createElement("li");
 
@@ -19,9 +23,13 @@ buttonSend.addEventListener("click", function () {
 
       console.log(result / 3);
 
-      document.getElementById('result').innerHTML = result / 3;
+      document.getElementById('result').innerHTML = Math.round(result / 3);
 
-   }
+      inNumber1.value = '';
+      inNumber2.value = '';
+      inNumber3.value = '';
+
+   }*/
 
 })
 
