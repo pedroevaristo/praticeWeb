@@ -10,7 +10,7 @@ buttn.addEventListener("click", function () {
     
     for (var i = 0; i < inf; i++) {
         var list = document.createElement("li");
-        list.innerHTML = i + " = " + i ;
+        //list.innerHTML = i + " = " + i ;
         listnum.appendChild(list);
 
         result.appendChild(listnum);

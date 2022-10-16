@@ -9,7 +9,7 @@ btn.addEventListener("click", function () {
     vetor.push(txt.value);
     txt.value = "";
 
-    var list = document.createElement("ul");
+    var list = document.createElement("ol");
     for (var i = 0; i < vetor.length; i++) {
         var item = document.createElement("li");
         item.innerHTML = vetor[i] + "² = " + Math.pow(vetor[i], 2);

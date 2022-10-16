@@ -2,48 +2,36 @@ var inNumber1 = document.getElementById('numNote1');
 var inNumber2 = document.getElementById('numNote2');
 var inNumber3 = document.getElementById('numNote3');
 
+var result = document.getElementById('result');
+
+
 
 
 buttonSend.addEventListener("click", function () {
-//fazer denovo
-})
-
-
-
-
-/*
-
-
-   var quantStudent = parseInt(document.getElementById('numStudent').value);
+   
+   var array = [];
    var list = document.createElement("ol");
-   const rep = 0;
 
-   do {
-      result = Number(inNumber1.value) + Number(inNumber2.value) + Number(inNumber3.value);
+   var resultStudent = Number(inNumber1.value) + Number(inNumber2.value) + Number(inNumber3.value);
 
+   array.push(resultStudent);
 
-      rep += 1;
-   } while (rep);
+   resultStudent = "";
 
-   for (var i = 0; i < quantStudent; i++) {
+   for (var i = 0; i < array.length; i++) {
+      var listNumb = document.createElement("li");
 
-      var numbList = document.createElement("li");
+      listNumb.innerHTML = "Nota do aluno " + Math.round(array[i]/3);
+      list.appendChild(listNumb);
+      
+      result.appendChild(list);
 
-      list.appendChild(numbList);
-
-      console.log(result / 3);
-
-      document.getElementById('result').innerHTML = Math.round(result / 3);
-
-      inNumber1.value = '';
-      inNumber2.value = '';
-      inNumber3.value = '';
-
+     
    }
 
-
-
-
-
-
-*/
+   inNumber1.value = "";
+   inNumber2.value = "";
+   inNumber3.value = "";
+   
+//document.getElementById('result').innerHTML = Math.round(result / 3);
+})
