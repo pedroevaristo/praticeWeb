@@ -4,34 +4,33 @@ var inNumber3 = document.getElementById('numNote3');
 
 var result = document.getElementById('result');
 
-
-
-
 buttonSend.addEventListener("click", function () {
    
    var array = [];
-   var list = document.createElement("ol");
-
-   var resultStudent = Number(inNumber1.value) + Number(inNumber2.value) + Number(inNumber3.value);
+   
+   var resultStudent = 0;
+  
+   resultStudent = Number(inNumber1.value) + Number(inNumber2.value) + Number(inNumber3.value);
 
    array.push(resultStudent);
+   
 
-   resultStudent = "";
+   var list = document.createElement("ol");
 
    for (var i = 0; i < array.length; i++) {
-      var listNumb = document.createElement("li");
 
-      listNumb.innerHTML = "Nota do aluno " + Math.round(array[i]/3);
-      list.appendChild(listNumb);
-      
-      result.appendChild(list);
+      result.innerHTML += " <li> " + "Nota do aluno " + Math.round(array[i]/3) + " </li> ";
 
-     
    }
 
    inNumber1.value = "";
    inNumber2.value = "";
    inNumber3.value = "";
-   
-//document.getElementById('result').innerHTML = Math.round(result / 3);
+
 })
+
+/*list.appendChild(listNumb);
+result.innerHTML = "";
+result.appendChild(list);*/
+//document.getElementById('result').innerHTML = Math.round(result / 3);
+
