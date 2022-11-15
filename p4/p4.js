@@ -1,15 +1,6 @@
-var inputInfor = document.getElementById("input");
+var text = document.getElementById("textInformation");
+var button = document.getElementById("buttonInformation");
 
-var functionButton = document.getElementById("buttonSend");
-console.log("tete");
-functionButton.addEventListener("click", function () {
-    for () {
-        if (inputInfor.value % 2 == 0) {
-            console.log("É par")
-
-        } else {
-
-        }
-    }
-
+button.addEventListener("click", function(){
+    
 })
